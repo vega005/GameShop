@@ -1,0 +1,25 @@
+/*.aside{
+    width: var(--spacing) * 2;
+    width: 120px;
+}*/
+body .grid{
+    grid-template-columns: 120px auto;
+}
+
+.item-img{
+    width: 150px;
+    height: 200px;
+}
+
+.main-content {
+    margin-left: 20px;
+    margin: auto;
+    margin-top: 30px;
+    width: 75%;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+

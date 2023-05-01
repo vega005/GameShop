@@ -1,0 +1,41 @@
+.top-bar {
+    background-color: var(--default-color-8);
+    display: flex;
+}
+
+.top-bar h2.title {
+    color: var(--orange-color-6);
+    margin: 1rem  1.5rem;
+}
+
+.top-bar h2.title i {
+    color: var(--orange-color-1);
+}
+
+.top-bar .shop{
+display: flex;
+    color:  var(--orange-color-6);
+    text-decoration: none;
+    font-size: 1;
+    padding: 0.7rem;
+    margin:0.5rem;
+    border-radius: 0.5rem;
+        margin-left: auto;
+}
+
+.top-bar .shop .circle{
+    color: black;
+    background-color: var(--orange-color-1);
+    width: 1.2rem;
+    height: 1.2rem;
+        border-radius: 1rem;
+        text-align: center;
+        margin 2px;
+}
+.top-bar .shop:hover {
+    color:  var(--orange-color-5);
+}
+
+.top-bar .shop .circle:hover {
+    background-color: var(--orange-color-5);
+}

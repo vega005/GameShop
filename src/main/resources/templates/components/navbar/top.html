@@ -1,0 +1,19 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<!--  <header th:fragment="ShopHeader">-->
+<nav class="top-bar" th:fragment="ShopHeader">
+
+
+    <!--    <span class="title">MyShop</span>-->
+    <h2 class="title"> <i class="ri-gamepad-line"></i>  Gamero </h2>
+
+    <a th:href="@{/order/cart}" class="shop">
+            <i class="ri-shopping-cart-line"></i>
+        <div class="circle">
+            <span th:text="${@cart.counter}"></span>
+        </div>
+
+<!--            <span th:text="${@cart.sum}"></span>-->
+<!--            <span>zł</span>-->
+    </a>
+</nav>
+</html>

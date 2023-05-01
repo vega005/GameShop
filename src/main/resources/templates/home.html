@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head th:replace="fragments/head :: ShopHead"></head>
+<head th:replace="components/head :: ShopHead"></head>
 <body>
-<header th:replace="fragments/header :: ShopHeader"></header>
+<header th:replace="components/navbar/top :: ShopHeader"></header>
 <!--    <div class="main-content">-->
 <div class="grid">
-    <aside th:replace="fragments/aside :: ShopAside"></aside>
+    <aside th:replace="components/navbar/left :: ShopAside"></aside>
 
     <section>
         <div>
 
-            <div class="main-content">
+<!--            <div class="main-content">-->
 
-                <div class="" th:each="item : ${items}">
-                    <p class="item-name" th:text="${item.name}"></p>
+<!--                <div class="" th:each="item : ${items}">-->
+<!--                    <p class="item-name" th:text="${item.name}"></p>-->
 
-                    <img class="item-img" th:src="@{${item.imgUrl}}">
-                    <!--            <img  th:src="@{${item.imgUrl}}">-->
+<!--                    <img class="item-img" th:src="@{${item.imgUrl}}">-->
+<!--                    &lt;!&ndash;            <img  th:src="@{${item.imgUrl}}">&ndash;&gt;-->
 
-                    <div>
-                        <span>Cena: </span>
-                        <span th:text="${item.price}"> </span>
-                        <span>zł</span>
-                    </div>
+<!--                    <div>-->
+<!--                        <span>Cena: </span>-->
+<!--                        <span th:text="${item.price}"> </span>-->
+<!--                        <span>zł</span>-->
+<!--                    </div>-->
 
-                    <a th:href="@{'/add/' + ${item.id}}" class="add-btn">Dodaj</a>
-                </div>
-            </div>
+<!--                    <a th:href="@{'/add/' + ${item.id}}" class="add-btn">Dodaj</a>-->
+<!--                </div>-->
+<!--            </div>-->
         </div>
     </section>
 

@@ -1,6 +1,6 @@
 package com.sklepinternetowy.internetshop.model;
 
-import com.sklepinternetowy.internetshop.Category;
+//import com.sklepinternetowy.internetshop.Category;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -27,7 +27,7 @@ public class Item {
     private Boolean used;
     private int available;
     private float discount;
-    private Category category;
+//    private Category category;
     private String imgUrl;
 
     public Item(String name, BigDecimal price, String imgUrl) {

@@ -23,6 +23,26 @@ public class HomeController {
         model.addAttribute("items", cartService.getAllItems());
         return "home";
     }
+    @GetMapping("/playstation")
+    public String playstation(Model model) {
+        model.addAttribute("items", cartService.getAllPlaystation());
+        return "playstation";
+    }
+    @GetMapping("/x-box")
+    public String xbox(Model model) {
+        model.addAttribute("items", cartService.getAllXbox());
+        return "x-box";
+    }
+    @GetMapping("/pc")
+    public String pc(Model model) {
+        model.addAttribute("items", cartService.getAllPC());
+        return "pc";
+    }
+    @GetMapping("/nintendo")
+    public String nintendo(Model model) {
+        model.addAttribute("items", cartService.getAllNintendo());
+        return "nintendo";
+    }
 
     @GetMapping("/add/{itemId}")
     public String addItemToCart(@PathVariable("itemId") Long itemId, Model model) {

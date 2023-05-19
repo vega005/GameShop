@@ -1,10 +1,9 @@
 package com.sklepinternetowy.internetshop.model;
 
-//import com.sklepinternetowy.internetshop.Category;
+import com.sklepinternetowy.internetshop.Category;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -27,26 +26,19 @@ public class Item {
     private Boolean used;
     private int available;
     private float discount;
-//    private Category category;
+    private Category category;
     private String imgUrl;
 
-    public Item(String name, BigDecimal price, String imgUrl) {
+    public Item(String name, BigDecimal price, Category category, String imgUrl) {
         this.name = name;
         this.price = price;
+        this.category = category;
         this.imgUrl = imgUrl;
     }
 
-
-//    public Item(Long id, String name, String description, BigDecimal price, BigDecimal min_price, Boolean used, int available, float discount, Category category, String imgUrl) {
-//        this.id = id;
-//        this.name = name;
-//        this.description = description;
-//        this.price = price;
-//        this.min_price = min_price;
-//        this.used = used;
-//        this.available = available;
-//        this.discount = discount;
-//        this.category = category;
-//        this.imgUrl = imgUrl;
-//    }
+    @Override
+    public String toString() {
+        String itemString = String.format("name: %1$s, price: %2$s, category: %3$s", id, name, price, category);
+        return itemString;
+    }
 }

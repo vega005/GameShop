@@ -1,0 +1,16 @@
+.left-bar {
+    margin-top: 60px;
+}
+.left-bar ul.list li{
+    display:flex;
+}
+
+.left-bar ul.list li a {
+    text-decoration: none;
+    color: var(--green-color-5);
+}
+
+.left-bar ul.list li a:hover{
+    color: var(--green-color-1);
+}
+

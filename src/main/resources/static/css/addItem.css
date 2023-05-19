@@ -1,0 +1,51 @@
+.summary {
+    color: var(--green-color-5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.summary form{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.summary button {
+    width: 20.7rem;
+    margin: auto;
+    border-radius: 1rem;
+    margin: 1rem;
+    background-color: var(--green-color-5);
+}
+
+.summary button:hover {
+    background-color: color: var(--green-color-1);
+}
+.summary input {
+    width: 20rem;
+    text-align: center;
+    margin: 0.5rem;
+    border-radius: 1rem;
+}
+.summary .select {
+    width: 20rem;
+    text-align: center;
+    margin: 0.5rem;
+    border-radius: 1rem;
+}
+
+table, tr {
+    width: 80%;
+    border: 1px solid black;
+}
+
+th{
+    text-align: left;
+    border: 1px solid black;;
+}
+
+td img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}

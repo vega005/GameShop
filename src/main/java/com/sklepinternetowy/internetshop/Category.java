@@ -1,12 +1,17 @@
-//package com.sklepinternetowy.internetshop;
-//
-//import jakarta.persistence.GeneratedValue;
-//import jakarta.persistence.Id;
-//
-//public class Category {
-//
-//    @Id
-//    @GeneratedValue
-//    private Long id;
-//    private String name;
-//}
+package com.sklepinternetowy.internetshop;
+
+public enum Category {
+    PLAYSTATION("Playstation"),
+    XBOX("Xbox"),
+    PC("PC"),
+    NINTENDO("Nintendo");
+    private final String displayName;
+
+    private Category(String displayName) {
+        this.displayName = displayName;
+    }
+
+    @Override public String toString() {
+        return displayName;
+    }
+}

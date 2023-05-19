@@ -1,20 +1,31 @@
 <html xmlns:th="http://www.thymeleaf.org">
-<aside class="aside" th:fragment="ShopAside">
-<nav>
-  <ul>
-    <li>
-      PlayStation
-    </li>
-    <li>
-      X-Box
-    </li>
-    <li>
-      PC
-    </li>
-    <li>
-      Nintendo Switch
-    </li>
-  </ul>
-</nav>
+<aside class="left-bar" th:fragment="ShopAside">
+    <nav class="nav">
+        <ul class="list">
+            <li>
+                <a href="/playstation">
+                    PlayStation
+                </a>
+            </li>
+            <br><br>
+            <li>
+                <a href="/pc">
+                    PC
+                </a>
+            </li>
+            <br><br>
+            <li>
+                <a href="/x-box">
+                    X-Box
+                </a>
+            </li>
+            <br><br>
+            <li>
+                <a href="/nintendo">
+                    Nintendo Switch
+                </a>
+            </li>
+        </ul>
+    </nav>
 </aside>
 </html>

@@ -1,6 +1,7 @@
 package com.sklepinternetowy.internetshop.service;
 
 import com.sklepinternetowy.internetshop.Cart;
+import com.sklepinternetowy.internetshop.Category;
 import com.sklepinternetowy.internetshop.ItemOperation;
 import com.sklepinternetowy.internetshop.model.Item;
 import com.sklepinternetowy.internetshop.repository.ItemRepository;
@@ -24,6 +25,19 @@ public class CartService {
 
     public List<Item> getAllItems() {
         return itemRepository.findAll();
+    }
+    public List<Item> getAllPlaystation() {
+        return itemRepository.findByCategory(Category.PLAYSTATION);
+    }
+    public List<Item> getAllXbox() {
+        return itemRepository.findByCategory(Category.XBOX);
+    }
+    public List<Item> getAllPC() {
+        return itemRepository.findByCategory(Category.PC);
+    }
+
+    public List<Item> getAllNintendo() {
+        return itemRepository.findByCategory(Category.NINTENDO);
     }
 
     public void itemOperation(Long itemId, ItemOperation itemOperation) {

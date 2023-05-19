@@ -4,19 +4,34 @@
 }
 
 .top-bar h2.title {
-    color: var(--orange-color-6);
+    color: var(--green-color-5);
     margin: 1rem  1.5rem;
+    font-size: 2rem;
 }
 
 .top-bar h2.title i {
-    color: var(--orange-color-1);
+    color: var(--green-color-1);
+}
+
+.addPlus{
+    text-decoration: none;
+    color: var(--green-color-5);
+    font-size: larger;
+    font-weight: bold;
+    font-size: xxx-large;
+    margin-top: 3px;
+    margin-right: 15px;
+}
+
+.addPlus:hover{
+    color: var(--green-color-1);
 }
 
 .top-bar .shop{
-display: flex;
-    color:  var(--orange-color-6);
+    display: flex;
+    color:  var(--green-color-5);
     text-decoration: none;
-    font-size: 1;
+    font-size: 1.5rem;
     padding: 0.7rem;
     margin:0.5rem;
     border-radius: 0.5rem;
@@ -25,17 +40,37 @@ display: flex;
 
 .top-bar .shop .circle{
     color: black;
-    background-color: var(--orange-color-1);
-    width: 1.2rem;
-    height: 1.2rem;
-        border-radius: 1rem;
-        text-align: center;
-        margin 2px;
-}
-.top-bar .shop:hover {
-    color:  var(--orange-color-5);
+    background-color: var(--green-color-1);
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 1rem;
+    text-align: center;
+    margin 2px;
 }
 
-.top-bar .shop .circle:hover {
-    background-color: var(--orange-color-5);
+.top-bar .shop:hover  {
+   color: var(--green-color-1);
+
+}
+.top-bar .shop:hover i .circle: {
+    color: var(--green-color-4);
+    background-color: var(--green-color-1);
+
+}
+
+.top-bar .input{
+    background-color: var(--green-color-0);
+    color: black;
+    width: 20rem;
+    height: 1.5rem;
+    border-radius: 1rem;
+    margin: 1.2rem;
+
+
+}
+
+.top-bar .divInput{
+    margin-left: auto;
+    margin-left: -1rem;
+
 }

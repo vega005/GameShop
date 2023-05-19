@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head th:replace="fragments/head :: ShopHead"></head>
+<head th:replace="components/head :: ShopHead"></head>
 <body>
-<header th:replace="fragments/header :: ShopHeader"></header>
+<header th:replace="components/navbar/top :: ShopHeader"></header>
 
-<div class="main-content">
+<div class="main-content-sum">
 
     <table cellspacing="0" style="border: 0px">
         <tr th:each="cartItem : ${@cart.cartItems}">
@@ -22,7 +22,7 @@
     </table>
 
     <div class="summary">
-        <p><span>Do zapłaty</span><span th:text="${@cart.sum}"></span>zł</p>
+        <p><span>Do zapłaty </span><span th:text="${@cart.sum}"></span> zł</p>
     </div>
 
     <div class="summary">

@@ -35,16 +35,9 @@ public class AdminController {
         model.addAttribute("categories", categories);
         return "adminview/addItem";
     }
-////
-//    @PostMapping
-//    private String addItem(Item item) {
-//        itemRepository.save(item);
-//        return "redirect:/";
-//    }
+
     @PostMapping()
     private String addItem(Item item) {
-        System.out.println(example);
-
         itemRepository.save(item);
         return "redirect:/";
     }

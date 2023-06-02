@@ -50,6 +50,7 @@ body {
 .main-content {
     background-color: var(--default-color-7);
     margin: auto;
+    margin-left: 200px;
     margin-top: 30px;
     width: 75%;
     padding: 10px;
@@ -68,7 +69,7 @@ body {
 
 .main-content-category{
     background-color: var(--default-color-7);
-        margin: auto;
+        margin-left: 200px;
         margin-top: 30px;
         padding: 10px;
         display: flex;
